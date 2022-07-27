@@ -1,37 +1,5 @@
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{Introdução} 
-    \transdissolve[duration=0.5]
-    Um dos pontos importantes na área da robótica é a interação entre os sistemas, e em decorrência ao programa de formação em robótica uma das lacunas será preenchida com o desenvolvimento do desafio 2.5..
-
-    O desafio consiste em:
-    %\newline
-        \begin{columns}[t]
-            \column{.05\linewidth}
-            \column{.4\linewidth}
-                \begin{enumerate}
-                    \item assimilar o conhecimento da interação em robots;
-                    \item compreender em profundidade os conceitos de simulação, e o;
-                    \item desenvolvimento da liderança em projetos \cite{Mohan2015}.
-                \end{enumerate}
-            \column{.6\linewidth}
-            \begin{center}
-            %\centerline{
-                \begin{figure}
-                    %\includegraphics[width=1\textwidth]{pista}
-                    \caption{Pista de corrida \cite{agostini2007}}
-                    \roundpic[xshift=0cm,yshift=0cm]{2.5cm}{6cm}{pista}
-                    %\caption{Pista de corrida \cite{agostini2007}}
-                \end{figure}
-            %}
-            \end{center}
-        \end{columns}
-%*----------- notes
-    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
-%-
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[c]{Objetivo} 
-    \framesubtitle{sub-objetivo}
+\begin{frame}[c]{Introdução} 
     \transdissolve[duration=0.5]
    
     \begin{center}
@@ -40,176 +8,103 @@
         \begin{center}
             \vspace*{0.5cm}
             \resizebox{!}{0.7cm}{%
-                \color{bg} O objetivo é ter um objetivo.
+                \color{bg} O que é o raspode?.
             }%
         \end{center}
         \end{shaded}
         }%
     \end{center}
     
-   
+\end{frame}
+
+\begin{frame}[t]{Introdução} 
+    \transdissolve[duration=0.5]
+    Robô hexapode que tem como objetivo se tornar uma plataforma de aprendizagem para a RAS CIMATEC.
+    %\newline
+        \begin{columns}[t]
+            \column{.05\linewidth}
+            \column{.5\linewidth}
+                \begin{itemize}
+                    \item Projeto do IEEE RAS CIMATEC;
+                    \item ROS2 Foxy;
+                    \item Navegação autônoma;
+                    \item Mapeamento de ambientes.
+                \end{itemize}
+            \column{.4\linewidth}
+            \begin{center}
+            %\centerline{
+                \begin{figure}
+                    \includegraphics[width=0.8\textwidth]{cad.png}
+                    \caption{Modelo 3D(Voser, 2021).}
+                    % \roundpic[xshift=0cm,yshift=0cm]{2.5cm}{6cm}{pista}
+                    %\caption{Pista de corrida \cite{agostini2007}}
+                \end{figure}
+            %}
+            \end{center}
+        \end{columns}
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
-%-
-{
-\setbeamertemplate{background}
-{\includegraphics[trim = 0 0 0 0, clip, width = \the\paperwidth, height = \the\paperheight]{marcel-knupfer-37wuETxVwTQ-unsplash.jpg}}
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[c]{}
-    \transboxout[duration=0.5]
-    
-    \begin{columns}
-        \column{.1\textwidth}
-        \column{.3\textwidth}
-        \column{.53\textwidth}
-            \vspace*{-3.5cm}
-            \Huge{\textbf{\textcolor{mracula5}{Quando chovia...}}}
-    \end{columns}
+
+\begin{frame}[t]{Objetivos}
+    Desenvolver competência em:
+    \begin{itemize}
+        \item ROS 2 - Foxy;
+        \item Cinemática inversa;
+        \item Sistemas de controle aplicado a patas de 3 juntas;
+        \item Navegação Autônoma utilizando planejadores de trajetória;
+        \item Mapeamento 3D de ambientes utilizando visão computacional.
+    \end{itemize}
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
-%-
-}
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{O sistema robótico}
-    \transboxout[duration=0.5]
-    \framesubtitle{Darwin-OP}
-    \begin{columns}
-        \column{.1\textwidth}
-        \column{.4\textwidth}
-            \includegraphics[width=.7\textwidth]{darwin-op}
-        \column{.4\textwidth}
-            \begin{enumerate}
-                \item plataforma antropormórfica Darwin-OP;
-                \item 20 DoF\footnote{do inglês, graus de liberdade};
-                \item composto de 18 servo-motores;
-                \item possui um grande gama de sensores para interação.
-            \end{enumerate}
-    \end{columns}
- %*----------- notes
-    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
-%-
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[c]{Darwin-OP - overview}
-    %\transboxin[duration=1,direction=30]
+
+\begin{frame}[t]{Metodologia} 
+    \transdissolve[duration=0.5]
     \centering
+    \includegraphics[width=0.7\textwidth]{diagram.pdf}
+\end{frame}
 
-    \includemedia[
-      width=0.7\linewidth,
-      totalheight=0.39375\linewidth,
-      activate=pageopen,
-      passcontext, 
-      addresource=./Source/movies/Darwin-OP.mp4,
-      flashvars={
-      source=./Source/movies/Darwin-OP.mp4
-      &autoPlay=true
-      &Loop=false}
-      ]{\fbox{\includegraphics{darwin-op}}}{VPlayer.swf}
+
+\begin{frame}[t]{Inspiração}
+    \framesubtitle{Leptan project}
+
+    \transdissolve[duration=0.5]
+    \centering
+    \includegraphics[width=0.5\textwidth]{real.png}
+
+\end{frame}
+
+\begin{frame}[t]{Modelo 3D}
+
+    \transdissolve[duration=0.5]
+    \centering
+    \includegraphics[width=0.7\textwidth]{cad}
+
+\end{frame}
+
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[c]{Simulação}
+    \framesubtitle{Teleoperação}
+    \begin{center}
+    
+        \includemedia[
+            width=0.7\linewidth,
+            totalheight=0.39375\linewidth,
+            activate=pageopen,
+            passcontext, 
+            %transparent,
+            addresource=./Source/gifs/robotdesinfec.wmv,
+            flashvars={
+            source=./Source/gifs/robotdesinfec.wmv
+            &autoPlay=true
+            &autoRewind=true
+            &loop=true}
+            ]{\fbox{\includegraphics{Source/gifs/robotdesinfec0.png}}}{VPlayer.swf}
+    \end{center}
 
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
+ \end{frame}
 %-
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{O sistema robótico}
-    \transboxout[duration=0.5]
-    \framesubtitle{Darwin-OP}
-    \begin{columns}
-        \column{.1\textwidth}
-        \column{.4\textwidth}
-        \column{.4\textwidth}
-    \end{columns}
-
-    \begin{block}{Um bloco de destaque}
-        Um exemplo de block.\\
-        Oferece um certo destaque.
-    \end{block}
-
-    \begin{alertblock}{Um bloco de destaque}
-        Um exemplo de alertblock.\\
-        Oferece um certo destaque.
-    \end{alertblock}
-
-    \begin{exampleblock}{Um bloco de destaque}
-        Um exemplo de exampleblock.
-    \end{exampleblock}
- %*----------- notes
-    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
-%-
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{O sistema robótico}
-    \transboxout[duration=0.5]
-    \framesubtitle{PlantUML}
-    
-    \tikzstyle{every node}=[draw=black,thick,anchor=west]
-    \tikzstyle{selected}=[draw=red,fill=red!30]
-    \tikzstyle{optional}=[dashed,fill=gray!50]
-
-    \begin{tikzpicture}[%
-        grow via three points={one child at (0.5,-0.7) and
-        two children at (0.5,-0.7) and (0.5,-1.4)},
-        edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
-        \node {texmf}
-          child { node {doc}}		
-          child { node {fonts}}
-          child { node {source}}
-          child { node [selected] {tex}
-            child { node {generic}}
-            child { node [optional] {latex}}
-            child { node {plain}}
-          }
-          child [missing] {}				
-          child [missing] {}				
-          child [missing] {}				
-          child { node {texdoc}};
-      \end{tikzpicture}
-
- %*----------- notes
-    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
-%-
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{O sistema robótico}
-    \transboxout[duration=0.5]
-    \framesubtitle{PlantUML}
-    
-    % Define block styles
-    \tikzstyle{decision} = [diamond, draw, fill=blue!20, 
-    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
-    \tikzstyle{block} = [rectangle, draw, fill=blue!20, 
-    text width=5em, text centered, rounded corners, minimum height=4em]
-    \tikzstyle{line} = [draw, -latex']
-    \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
-    minimum height=2em]
-
-    \begin{tikzpicture}[node distance = 2cm, auto]
-        % Place nodes
-        \node [block] (init) {initialize model};
-        \node [cloud, left of=init] (expert) {expert};
-        \node [cloud, right of=init] (system) {system};
-=
-    \end{tikzpicture}
-
- %*----------- notes
-    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
-%-
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{O sistema robótico}
-    \transboxout[duration=0.5]
-    \framesubtitle{PlantUML}
-    
-    \begin{tikzpicture}[line width=0.1pt]
-        \draw(0,0) circle(5cm);
-        \draw(0,0) circle(1cm);
-
-
-    \end{tikzpicture}
-
- %*----------- notes
-    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
-%-
