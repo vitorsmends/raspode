@@ -8,7 +8,7 @@
         \begin{center}
             \vspace*{0.5cm}
             \resizebox{!}{0.7cm}{%
-                \color{bg} O que é o raspode?.
+                \color{bg} O que é o raspode?
             }%
         \end{center}
         \end{shaded}
@@ -19,13 +19,13 @@
 
 \begin{frame}[t]{Introdução} 
     \transdissolve[duration=0.5]
-    Robô hexapode que tem como objetivo se tornar uma plataforma de aprendizagem para a RAS CIMATEC.
+    Robô hexapode que tem como objetivo se tornar uma plataforma de aprendizagem para navegação autônoma e cinemática inversa.
     %\newline
         \begin{columns}[t]
             \column{.05\linewidth}
             \column{.5\linewidth}
                 \begin{itemize}
-                    \item Projeto do IEEE RAS CIMATEC;
+                    \item IEEE RAS CIMATEC;
                     \item ROS2 Foxy;
                     \item Navegação autônoma;
                     \item Mapeamento de ambientes.
@@ -60,10 +60,35 @@
 \end{frame}
 
 \begin{frame}[t]{Metodologia} 
+    \framesubtitle{DIP\&T}
     \transdissolve[duration=0.5]
     \centering
-    \includegraphics[width=0.7\textwidth]{diagram.pdf}
+    \begin{figure}
+        
+        \includegraphics[width=0.8\textwidth]{dipt.png}\\
+        \caption{Etapas do Processo utilizando o DIP\&T}
+    \end{figure}
+    
 \end{frame}
+
+\begin{frame}[t]{Metodologia} 
+    \framesubtitle{Adaptação do DIP\&T}
+    \transdissolve[duration=0.5]
+    \centering
+    \begin{figure}
+        \includegraphics[width=.95\textwidth]{dipt-setps.png}\\
+        \caption{Etapas da metodologia.}
+    \end{figure}
+    
+\end{frame}
+
+
+\begin{frame}[t]{Metodologia} 
+    \transdissolve[duration=0.5]
+    \centering
+    \includegraphics[width=\textwidth]{diagram-4.pdf}
+\end{frame}
+
 
 
 \begin{frame}[t]{Inspiração}
@@ -73,6 +98,25 @@
     \centering
     \includegraphics[width=0.5\textwidth]{real.png}
 
+\end{frame}
+
+\begin{frame}[t]{Inspiração}
+    \transboxout[duration=0.5]
+    \framesubtitle{Leptan project}
+    \begin{columns}
+        \column{.1\textwidth}
+        \column{.4\textwidth}
+            \includegraphics[width=.87\textwidth]{real.png}
+        \column{.6\textwidth}
+            Através de teleoperação, é possível:
+            \begin{itemize}
+                \item Levantar e deitar;
+                \item Caminhar em qualquer direção;
+                \item Girar em torno do seu próprio eixo.
+            
+            \end{itemize}
+    \end{columns}
+   
 \end{frame}
 
 \begin{frame}[t]{Modelo 3D}
@@ -85,7 +129,7 @@
 
 %*----------- SLIDE -------------------------------------------------------------
 \begin{frame}[c]{Simulação}
-    \framesubtitle{Teleoperação}
+    \framesubtitle{Estado Atual - Controlado por Teleoperação}
     \begin{center}
     
         \includemedia[
@@ -94,13 +138,13 @@
             activate=pageopen,
             passcontext, 
             %transparent,
-            addresource=./Source/gifs/robotdesinfec.wmv,
+            addresource=./Source/movies/raspode-movement.mp4,
             flashvars={
-            source=./Source/gifs/robotdesinfec.wmv
+            source=./Source/movies/raspode-movement.mp4
             &autoPlay=true
             &autoRewind=true
             &loop=true}
-            ]{\fbox{\includegraphics{Source/gifs/robotdesinfec0.png}}}{VPlayer.swf}
+            ]{\fbox{\includegraphics{Source/pictures/cad.png}}}{VPlayer.swf}
     \end{center}
 
 %*----------- notes
